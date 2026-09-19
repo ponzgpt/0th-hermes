@@ -130,10 +130,10 @@ Read it *after* step 4, not before.
 ## The script
 
 ```bash
-git clone https://github.com/ponzgpt/0th-hermes.git
-cd 0th-hermes
-./0th
+curl -fsSL https://raw.githubusercontent.com/ponzgpt/0th-hermes/main/0th -o 0th && sh 0th
 ```
+
+It is one self-contained POSIX shell script; `git clone https://github.com/ponzgpt/0th-hermes.git` works too.
 
 | Command | What it does |
 |---|---|
