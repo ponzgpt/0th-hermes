@@ -14,6 +14,16 @@
 #   ./0th local URL  point Hermes at a local OpenAI-compatible endpoint
 #
 # POSIX sh on purpose: it has to run on a fresh machine before anything else is.
+#
+# ── MOVED ────────────────────────────────────────────────────────────────────
+# This copy is frozen. The maintained one lives at:
+#
+#   curl -fsSL https://hermes-contributions.technoir.cloud/0th -o 0th && sh 0th
+#
+# This file keeps working and keeps resolving at its raw.githubusercontent.com
+# URL, because people piped it into a shell and that is not something you get to
+# take back. It just will not be updated again.
+# Source: https://github.com/ponzgpt/hermes-contributions
 
 set -eu
 
@@ -217,6 +227,13 @@ cmd_local() {
   say "  Full detail: $DOCS/user-guide/local-models"
 }
 
+MOVED_URL="https://hermes-contributions.technoir.cloud/0th"
+
+moved_note() {
+  printf '\n  %sThis copy of 0th is frozen.%s The maintained one:\n' "$DIM" "$R"
+  printf '  %s%s%s\n' "$DIM" "curl -fsSL $MOVED_URL -o 0th && sh 0th" "$R"
+}
+
 cmd_next() {
   head_ "Next step"
 
@@ -285,7 +302,7 @@ EOF
 }
 
 case "${1:-next}" in
-  next|'')  cmd_next ;;
+  next|'')  cmd_next; moved_note ;;
   check)    cmd_check ;;
   install)  cmd_install ;;
   doctor)   cmd_doctor ;;

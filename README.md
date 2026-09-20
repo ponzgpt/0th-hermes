@@ -1,3 +1,15 @@
+> [!NOTE]
+> **Moved.** This is now `onboarding/` in **[ponzgpt/hermes-contributions](https://github.com/ponzgpt/hermes-contributions)**, together
+> with the three other things I built around Hermes Agent. Live at
+> **<https://hermes-contributions.technoir.cloud/onboarding/>**; `0th-hermes.technoir.cloud` now redirects there.
+>
+> This repository is archived and read-only. It is kept rather than deleted so that nothing
+> already linking here breaks.
+>
+> `raw.githubusercontent.com/ponzgpt/0th-hermes/main/0th` keeps resolving and always will,
+> because people piped it into a shell. That copy is frozen at this commit; the maintained
+> script is at <https://hermes-contributions.technoir.cloud/0th>.
+
 # 0TH Hermes
 
 **Zero To Hero Hermes.** An opinionated shortest path to a working
